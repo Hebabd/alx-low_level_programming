@@ -2,7 +2,7 @@
 /**
  * main-main function is to print
  *
- * return always eequel zero
+ * return: always 0
  */
 int main(void)
 {
