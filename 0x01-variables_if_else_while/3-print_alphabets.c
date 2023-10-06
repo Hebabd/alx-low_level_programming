@@ -20,9 +20,9 @@ int main(void)
 		ch++;
 	}
 	/*print A -Z*/
-	while (cH <= 'Z')
+	while (CH <= 'Z')
 	{
-		putchar(CH)
+		putchar(CH);
 			CH++;
 	}
 	putchar('\n');
