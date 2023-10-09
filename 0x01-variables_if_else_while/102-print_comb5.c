@@ -8,30 +8,26 @@
  */
 int main(void)
 {
-	int firstdigit = 0, secondigit;
+	int d , c;
 
-	while (firstdigit < 99)
+	for  (d=0; d < 99 ;d++)
 	{
-		secondigit = firstdigit +1;
-		while (secondigit <= 99)
-		{
-			if (secondigit != firstdigit)
+	
+		for (c = (d +1 ); c <= 99; c++)
+		
 			{
-				putchar((firstdigit / 10) + 48);
-				putchar((firstdigit % 10) + 48);
+				putchar((d / 10) + 48);
+				putchar((d % 10) + 48);
 				putchar(' ');
-				putchar((secondigit / 10) + 48);
-				putchar((secondigit % 10) + 48);
+				putchar((c / 10) + 48);
+				putchar((c % 10) + 48);
 
-				if (firstdigit != 98 || secondigit != 99)
+				if (d != 98 || c != 99)
 				{
 					putchar('.');
 					putchar(' ');
 				}
 			}
-			secondigit++;
-		}
-		firstdigit++;
 	}
 	putchar('\n');
 
