@@ -12,7 +12,7 @@ int main(void)
 
 	while (firstdigit < 99)
 	{
-		secondigit = firstdigit;
+		secondigit = firstdigit +1;
 		while (secondigit <= 99)
 		{
 			if (secondigit != firstdigit)
