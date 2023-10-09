@@ -8,13 +8,11 @@
  */
 int main(void)
 {
-	int d , c;
+	int d, c;
 
-	for  (d=0; d < 99 ;d++)
+	for  (d = 0; d < 99; d++)
 	{
-	
-		for (c = (d +1 ); c <= 99; c++)
-		
+		for (c = (d + 1); c < 100; c++)
 			{
 				putchar((d / 10) + 48);
 				putchar((d % 10) + 48);
@@ -22,7 +20,7 @@ int main(void)
 				putchar((c / 10) + 48);
 				putchar((c % 10) + 48);
 
-				if (d != 98 || c != 99)
+				if (d != 98 && c != 99)
 				{
 					putchar('.');
 					putchar(' ');
