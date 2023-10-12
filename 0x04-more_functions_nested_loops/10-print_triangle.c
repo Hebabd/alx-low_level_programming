@@ -6,7 +6,7 @@
  *
  * Return:always 0 ( success)
  */
-void print _tringle(int size)
+void print_tringle(int size)
 {
 	if (size <= 0)
 	{
@@ -16,7 +16,7 @@ void print _tringle(int size)
 	{
 		int i, j;
 
-		for (i = 1; i <= sie; i++)
+		for (i = 1; i <= size; i++)
 		{
 			_putchar(' ');
 		}
@@ -25,7 +25,7 @@ void print _tringle(int size)
 		{
 			_putchar('#');
 		}
-		_putchaar('\n');
+		_putchar('\n');
 		}
-	}
 }
+
