@@ -25,8 +25,7 @@ int main(void)
 			printf("%d", num);
 
 		if (num != 100)
-			printf(" ");
-		else
+			printf(" "); else
 			printf("\n");
 	}
 	return (0);
