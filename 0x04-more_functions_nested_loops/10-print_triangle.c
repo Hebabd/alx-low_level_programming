@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_tringle - prints
+ * print_triangle - prints
  * @size: size of the triangle
  *
  * Return:always 0 ( success)
  */
-void print_tringle(int size)
+void print_triangle(int size)
 {
 	if (size <= 0)
 	{
@@ -18,6 +18,8 @@ void print_tringle(int size)
 
 		for (i = 1; i <= size; i++)
 		{
+			for (j = 1; j <= size -i; j++)
+		{
 			_putchar(' ');
 		}
 
@@ -27,5 +29,5 @@ void print_tringle(int size)
 		}
 		_putchar('\n');
 		}
+	}
 }
-
