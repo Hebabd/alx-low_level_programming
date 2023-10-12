@@ -1,9 +1,9 @@
-#include "main .h"
+#include "main.h"
 
 /**
  * print_most_numbers - print 0 -9
  * but 2 -4
- *Return: always 0 (success)
+ *return:void
  *
  */
 
