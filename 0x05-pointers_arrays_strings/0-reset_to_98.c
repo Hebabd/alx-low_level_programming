@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- * reset _to_98 - afunction that take pointer ti an int
+ * reset_to_98 - afunction that take pointer
  *
  * @n: int param
  */
