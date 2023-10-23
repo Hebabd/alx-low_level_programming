@@ -1,19 +1,38 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * cap_string - capitalizes all words of a string.
+ * @str: The string to be capitalized.
+ * Return: A pointer to the change string.
  */
 
-int main(void)
+char *cap_string(char *str)
 {
-	char str[] = "Expect the best. Prepare for the worst.Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
+	int index = 0;
 
-	char *ptr;
-		ptr = cap_string(str);
-	printf("%s", ptr);
-	printf("%s", str);
-	return (0);
+	while (str[index]) {
+	
+
+		if (index == 0 || str[index - 1] == ' ' ||
+		str[index - 1] == '\t' ||
+		 str[index - 1] == '\n' ||
+		  str[index - 1] == ',' ||
+		   str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		     str[index - 1] == '!' ||
+		      str[index - 1] == '?' ||
+		       str[index - 1] == '"' ||
+			str[index - 1] == '(' ||
+			 str[index - 1] == ')' ||
+			  str[index - 1] == '{' ||
+			   str[index - 1] == '}')
+		{
+		if(str[index] >= 'a' && str[index] <= 'z')
+		{
+			   str[index] -= 32;
+		}
+		}
+			   index++;
+	}
+		return (str);
 }
