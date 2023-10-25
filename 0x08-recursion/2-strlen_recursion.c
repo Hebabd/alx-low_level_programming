@@ -3,16 +3,16 @@
 /**
  * _strlen_recursion - length of a string
  * @s: pointer block of memory to fill
- * Return: strlen_recursion
+ * Return: int
  */
 
 int _strlen_recursion(char *s)
 {
+	int ntr = 0;
 
-	/*Base condition*/
-	if *s == '\0')
-		return (0);
-
-	else
-		return (1 + _strlen_recursion(s + 1)); /*sum 1*/
+	if (*s > '\0')
+	{
+		ntr += _strlen_recursion(s + 1) + 1;
+	}
+	return (ntr);
 }
