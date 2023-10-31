@@ -2,7 +2,7 @@
 
 
 /**
- * **alloc_gridi - returns a pointer to a 2 dimensional array of integers.
+ * **alloc_grid - returns a pointer to a 2 dimensional array of integers.
  * @width: int
  * @height: int
  * Return: 2d array
