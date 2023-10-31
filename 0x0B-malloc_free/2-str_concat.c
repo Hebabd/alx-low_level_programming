@@ -31,14 +31,15 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	len = len1 + len2;
-	re = (char *)malloc(sizeof(char) * (len = 1));
+	re = (char *)malloc(sizeof(char) * (len + 1));
 	if (re == NULL)
 		return (NULL);
 
 	for (i = 0; i < len1; i++)
 		re[i] = s1[i];
-	for (j = 0; j < len2; j++; i++)
+	for (j = 0; j < len2; j++, i++)
 		re[i] = s2[j];
+
 	re[len] = '\0';
 
 	return (re);
