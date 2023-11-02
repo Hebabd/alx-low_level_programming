@@ -5,7 +5,7 @@
 /**
  * string_nconcat - concatenates two strings
  * @s1: pointer to first string.
- * @s2 pointer to 2nd string.
+ * @s2: pointer to 2nd string.
  * @n: Number of bytes from s2 to concatenate.
  *
  * Return:pointer to space in memory containin concatenated string.
