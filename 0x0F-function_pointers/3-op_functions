@@ -1,0 +1,11 @@
+#include "3-calc.h"
+
+
+/**
+ *op_add - adds two integers
+ *@a: the first int
+ *@b: the second int
+ *
+ *Return: the sum
+ */
+int 
