@@ -5,7 +5,7 @@
  * @head: address of pointer to head node
  * @str: str field of node
  *
- * Return: size of list
+ * Return: pointer to the new head of the list
  */
 list_t *add_node(list_t **head, const char *str)
 {
@@ -13,7 +13,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (!head || !new_head)
 		return (NULL);
-	| if (str)
+	if (str)
 	{
 		new_head->str = strdup(str);
 		if (!new_head->str)
@@ -24,7 +24,15 @@ list_t *add_node(list_t **head, const char *str)
 		new_head->len = _strlen(new_head->str);
 	}
 
+	else
+
+	{
+	 new_head->str = NULL;
+	 new_head->len = 0;
+	}
+
 	new_head->next = *head;
 	*head = new_head;
+
 	return (new_head);
 }
