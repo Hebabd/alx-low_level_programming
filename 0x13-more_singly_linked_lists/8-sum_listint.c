@@ -1,4 +1,4 @@
-#include "lists_h"
+#include "lists.h"
 
 /**
  * sum_listint - returns sum of all dta
@@ -15,5 +15,6 @@ int sum_listint(listint_t *head)
 		sum += head->n;
 		head = head->next;
 	}
+
 	return (sum);
 }
